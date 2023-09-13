@@ -1,0 +1,268 @@
+:root{
+  --main-color: #2C3E50;
+  --secondary-color: rgb(26, 188, 156);
+  --third-color: #1A252F;
+  --duration: 0.5s;
+}
+
+
+.vh-85{
+  height: 85vh !important;
+}
+.vh-90{
+  margin-top: 78px !important;
+  min-height: calc(100vh - 112px) !important;
+}
+.fs-13{
+  font-size: 13px;
+}
+
+img{
+  width: 100%;
+}
+.mmtt{
+  margin-top: 77px;
+}
+.z-t{
+  z-index: -1;
+  transition: var(--duration);
+}
+.top-b{
+  top:40%
+}
+.top-t{
+  top:-70%
+}
+
+
+/* 
+==========================
+==========================
+==========================
+Navbar style
+==========================
+==========================
+==========================
+*/
+
+.navbar{
+  background-color: var(--main-color);
+}
+
+button.navbar-toggler{
+  border: 1px solid var(--third-color);
+}
+button.navbar-toggler:focus{
+  box-shadow: none;
+}
+
+a.nav-link.py-1.px-2{
+  font-size: 13px;
+  font-weight: bold;
+}
+a.navbar-brand.text-uppercase.fw-bold.fs-4{
+  font-size: 2rem !important;
+}
+a.navbar-brand.text-uppercase.fw-bold.fs-4, a.nav-link.py-1.px-2{
+  color: #fff;
+  text-transform: uppercase !important;
+  width: fit-content;
+}
+
+.nav-link.active {
+  background-color: var(--second-color);
+  color: var(--fourth-color) !important;
+  border-radius: 10px;
+}
+
+
+.nav-link.py-1.px-2{
+  width: fit-content;
+  padding: 5px 8px !important;
+  border-radius: 5px !important;
+  transition: 0.5s;
+  margin: 0 10px;
+}
+.activeLink{
+  background-color: #1abc9c !important; 
+  /* padding:  5px !important; */
+  border-radius: 5px;
+}
+.active{
+  background-color: #1abc9c !important; 
+  /* padding:  5px !important; */
+  border-radius: 5px;
+}
+
+/* 
+==========================
+==========================
+==========================
+Footer style
+==========================
+==========================
+==========================
+*/
+
+.social i{
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  margin-inline: 5px;
+  transition: var(--duration);
+}
+
+.social i::before{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.info{
+  background-color: var(--main-color);
+}
+.info p{
+  font-size: 15px !important;
+}
+
+.copyright{
+  background-color: var(--third-color);
+}
+
+
+
+.social i:hover{
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+}
+
+
+
+
+
+
+/* 
+==========================
+==========================
+==========================
+home style
+==========================
+==========================
+==========================
+*/
+
+.hero ,.about{
+  background-color: var(--secondary-color);
+  color: #fff;
+  margin-top: 75px;
+}
+.avatar{
+  width: 210px;
+}
+.line{
+  width: 60px;
+  height: 3px;
+  background-color: #fff;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+
+
+
+
+/* 
+==========================
+==========================
+==========================
+portfolio style
+==========================
+==========================
+==========================
+*/
+
+
+
+
+.portfolio, .contact, .notFound {
+  color: var(--main-color) !important;
+}
+
+.portfolio .line, .contact .line, .notFound .line {
+  background-color: var(--main-color);
+}
+
+
+.layer{
+  opacity: 0;
+  transition: opacity var(--duration);
+}
+.layer i{
+  font-size: 60px;
+}
+
+.image:hover .layer{
+  background-color:  rgba(26, 188, 156, 1) !important ;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+
+
+
+
+/* 
+==========================
+==========================
+==========================
+contact style
+==========================
+==========================
+==========================
+*/
+
+input.d-block.form-control{
+  border: none;
+  border-radius: 0;
+  padding-left: 0;
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 20px;
+}
+
+input.d-block.form-control.my-4:focus{
+  border-color: var(--secondary-color);
+  box-shadow: 0 2.5px 0px rgba(26, 188, 156, .5);
+}
+
+button{
+  background-color: var(--secondary-color);
+}
+.btnMainColor{
+  margin: 10px 0;
+  background-color: #1abc9c !important;
+  color: #fff !important;
+}
+
+
+
+
+
+/* 
+==========================
+==========================
+==========================
+media screens
+==========================
+==========================
+==========================
+*/
+
+@media screen and (max-width:992px) {
+  .nav-link {
+      margin: 10px 0 !important;
+  }
+}
