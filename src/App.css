@@ -225,7 +225,7 @@ contact style
 ==========================
 */
 
-input.d-block.form-control{
+input#name,input#Age,input#Email,input#Password{
   border: none;
   border-radius: 0;
   padding-left: 0;
@@ -233,7 +233,7 @@ input.d-block.form-control{
   margin-bottom: 20px;
 }
 
-input.d-block.form-control.my-4:focus{
+input#name:focus , input#Age:focus , input#Email:focus , input#Password:focus{
   border-color: var(--secondary-color);
   box-shadow: 0 2.5px 0px rgba(26, 188, 156, .5);
 }
@@ -248,6 +248,10 @@ button{
 }
 
 
+label{
+  color: var(--secondary-color);
+  transition: var(--duration);
+}
 
 
 

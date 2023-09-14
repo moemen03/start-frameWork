@@ -1,10 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {Helmet, HelmetProvider} from "react-helmet-async";
 import Header from '../Header/Header';
 
 
 export default function Contact() {
-
 
   return (
     <HelmetProvider>
@@ -15,13 +14,20 @@ export default function Contact() {
             <div className="container ">
                 <Header title="CONTACT SECTION"/>
                 <div className="w-75 m-auto">
-                    <input className='d-block form-control mt-4 ' id='nameInput' type="text" placeholder="Enter Your Name" />
-                    
-                    <input className='d-block form-control mt-4' type="number" placeholder="Enter Your Age" />
-                    <input className='d-block form-control mt-4' type="email" placeholder="Enter Your Email" />
-                    <input className='d-block form-control mt-4' type="password" placeholder="Enter Your Password" />
+                        {/* <label className={`position-relative`}>userName : </label> */}
+                        <input  type="text" id='name' placeholder="userName" className="form-control border-0 border-bottom py-3 position-relative ng-untouched ng-pristine ng-valid" />
+                        
+                        {/* <label className={`position-relative `}>userAge : </label> */}
+                        <input type="number" id='Age' placeholder="userAge" className="form-control border-0 border-bottom py-3 position-relative ng-untouched ng-pristine ng-valid" />
+                        
+                        {/* <label className={`position-relative `}>userEmail : </label> */}
+                        <input  type="email" id='Email' placeholder="userEmail" className="form-control border-0 border-bottom py-3 position-relative ng-untouched ng-pristine ng-valid" />
+                        
+                        {/* <label className={`position-relative `}>userPassword : </label> */}
+                        <input  type="password" id='Password' placeholder="userPassword" className="form-control border-0 border-bottom py-3 position-relative ng-untouched ng-pristine ng-valid" />
+                        
 
-                    <button type="submit" className="btn btnMainColor">
+                        <button type="submit" className="btn btnMainColor">
                         Send Message
                     </button>
                 </div>
