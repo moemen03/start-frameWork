@@ -14,6 +14,7 @@ export default function Contact() {
             <div className="container ">
                 <Header title="CONTACT SECTION"/>
                 <div className="w-75 m-auto">
+                    {/*  */}
                         {/* <label className={`position-relative`}>userName : </label> */}
                         <input  type="text" id='name' placeholder="userName" className="form-control border-0 border-bottom py-3 position-relative ng-untouched ng-pristine ng-valid" />
                         

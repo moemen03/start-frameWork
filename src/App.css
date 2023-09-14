@@ -4,7 +4,9 @@
   --third-color: #1A252F;
   --duration: 0.5s;
 }
-
+.vh-60{
+  height: 60vh !important;
+}
 
 .vh-85{
   height: 85vh !important;
